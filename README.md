@@ -1,8 +1,7 @@
 # mytmux
-
 Session Management
 
-+
+```
 Sessions are useful for completely separating work environments. I have a ‘Work’ session and a 'Play’ session; in 'Work’, I keep everything open that I need during my day-to-day development, while in 'Play’, I keep open current open-source gems or other work I hack on at home.
 
 `tmux new -s session_name`
@@ -69,3 +68,4 @@ bind r source-file ~/.tmux.conf
 # quick pane cycling
 unbind ^A
 bind ^A select-pane -t :.+
+```
