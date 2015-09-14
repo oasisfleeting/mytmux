@@ -1,8 +1,11 @@
 # mytmux
-Session Management
-
+taken from https://robots.thoughtbot.com/a-tmux-crash-course
 ```
-Sessions are useful for completely separating work environments. I have a ‘Work’ session and a 'Play’ session; in 'Work’, I keep everything open that I need during my day-to-day development, while in 'Play’, I keep open current open-source gems or other work I hack on at home.
+Session Management
+Sessions are useful for completely separating work environments. 
+I have a ‘Work’ session and a 'Play’ session; in 'Work’, I keep everything open that 
+I need during my day-to-day development, while in 'Play’, 
+I keep open current open-source gems or other work I hack on at home.
 
 `tmux new -s session_name`
 creates a new tmux session named session_name
@@ -17,7 +20,10 @@ detach the currently attached session
 Windows
 
 +
-tmux has a tabbed interface, but it calls its tabs “Windows”. To stay organized, I rename all the windows I use; if I’m hacking on a gem, I’ll name the window that gem’s name. The same thing goes for client applications. That way, I can recognize windows by context and not what application it’s running.
+tmux has a tabbed interface, but it calls its tabs “Windows”. 
+To stay organized, I rename all the windows I use; if I’m hacking on a gem, 
+I’ll name the window that gem’s name. The same thing goes for client applications. 
+That way, I can recognize windows by context and not what application it’s running.
 
 `tmux new-window (prefix + c)`
 create a new window
@@ -28,7 +34,11 @@ rename the current window
 Panes
 
 +
-Panes take my development time from bland to awesome. They’re the reason I was able to uninstall MacVim and develop solely in iTerm2. I don’t have to switch applications to switch contexts (editing, reading logs, IRB, etc.) - everything I do, I do in a terminal now. People argue that OS X’s Cmd+Tab is just as fast, but I don’t think so.
+Panes take my development time from bland to awesome. 
+They’re the reason I was able to uninstall MacVim and develop solely in iTerm2. 
+I don’t have to switch applications to switch contexts (editing, reading logs, IRB, etc.) - 
+everything I do, I do in a terminal now. People argue that OS X’s Cmd+Tab is just as fast, 
+but I don’t think so.
 
 `tmux split-window (prefix + “)`
 splits the window into two vertical panes
